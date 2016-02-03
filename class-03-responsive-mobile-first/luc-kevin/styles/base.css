@@ -2,17 +2,24 @@
 
 img {
   max-width: 100%;
+  padding: 1%;
+  margin: 1%;
 }
 
 body {
   line-height: 1.5;
   font-size: 100%;
   color: #313131;
+  padding: 1%; /* Added padding to create white space on the page. */
 }
 
 hr {
   margin: 1em;
   width: 80%;
+}
+
+section {
+  padding: 1%;
 }
 
 /*TEXT STYLES

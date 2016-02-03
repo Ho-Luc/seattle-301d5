@@ -1,5 +1,5 @@
 .site-header {
-  background: #FFEAAA;
+  background: #a0debf;
 }
 
 /* DONE: Float the main header to the left, to make room for the hamburger menu. */
@@ -37,7 +37,9 @@
 }
 
 #filters {
-  padding: 0;
+  padding-left: 0px;
+  padding-right: 3%;
+  padding-bottom: 1%;
   list-style: none;
 }
 
@@ -59,3 +61,21 @@
          - Main should be all on one row, with padding spaced better for a larger screen.
          - Just, ya know, try to make it look good! */
 /* @media only screen... */
+
+@media screen and (min-width: 640px) {
+  .icon-menu {
+    display: none;
+  }
+
+  .main-nav ul {
+    display: block;
+  }
+
+  .main-nav li {
+    display: inline;
+    padding-left: 1%;
+    padding-right: 4.1%;
+  }
+
+
+}
