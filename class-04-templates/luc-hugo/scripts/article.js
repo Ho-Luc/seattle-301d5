@@ -23,6 +23,8 @@ Article.prototype.toHtml = function() {
   this.publishStatus = this.publishedOn ? 'published ' + this.daysAgo + ' days ago' : '(draft)';
 
   // DONE: Use the function that Handlebars gave you to return your filled-in html template for THIS article.
+  var html = template(rawData);
+  // (document.body).append(html);
   return template(this);
 };
 
