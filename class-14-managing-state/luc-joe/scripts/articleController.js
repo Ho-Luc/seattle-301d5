@@ -41,7 +41,7 @@
   };
 
   // COMMENT: What does this method do?  What is it's execution path?
-  /* This method is called when the site initially loads. It grabs all the articles in the article.all array. After that, next() calls articlesController.index, which run a view function to append all the articles to the DOM.*/
+  /* This method is called when the site initially loads. It grabs all the articles in the article.all array. After that, next() calls articlesController.index, which run a view function to append all the articles to the DOM.  If there are articles in the Article.all array, apply those articles to the ctx.articles property.  If there are no articles in article.all, run Article.fetchAll and get the data from hackerIpsum.json and make a table with the data.*/
   articlesController.loadAll = function(ctx, next) {
     var articleData = function(allArticles) {
       ctx.articles = Article.all;
